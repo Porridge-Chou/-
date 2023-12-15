@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.vapp.backend.mapper.ChildMapper">
+
+<!--    <resultMap type="com.Back-End.entity.Child" id="ChildResult">-->
+<!--        <association property="type" column="typeId" select="com.Back-End.mapper.SmallTypeMapper.findById"></association>-->
+<!--    </resultMap>-->
+
+<!--    <select id="findSwiper" resultMap="ChildResult">-->
+<!--        select * from kid_table where isSwiper=true order by swiperSort-->
+<!--    </select>-->
+
+<!--    <select id="findHot" resultMap="ProductResult">-->
+<!--        SELECT * FROM t_product WHERE isHot=TRUE   ORDER BY hotDateTime DESC  LIMIT 0,8-->
+<!--    </select>-->
+
+<!--    <select id="list" parameterType="Map" resultMap="ProductResult">-->
+<!--        select * from t_product-->
+<!--        <where>-->
+<!--            <if test="name!=null and name!='' ">-->
+<!--                and name like concat('%',#{name},'%')-->
+<!--            </if>-->
+<!--        </where>-->
+<!--        <if test="start!=null and pageSize!=null">-->
+<!--            limit #{start},#{pageSize}-->
+<!--        </if>-->
+<!--    </select>-->
+
+<!--    <select id="getTotal" parameterType="Map" resultType="Long">-->
+<!--        select count(*) from t_product-->
+<!--        <where>-->
+<!--            <if test="name!=null and name!='' ">-->
+<!--                and name like concat('%',#{name},'%')-->
+<!--            </if>-->
+<!--        </where>-->
+<!--    </select>-->
+
+
+<!--    <insert id="add" parameterType="com.Back-End.entity.Child">-->
+<!--        insert into t_product values(null,#{name},#{price},#{stock},#{proPic},#{hot},#{swiper},#{swiperPic},#{swiperSort},#{type.id},null,#{productIntroImgs},#{productParaImgs},#{description});-->
+<!--    </insert>-->
+
+<!--    <update id="update" parameterType="com.java1234.entity.Product">-->
+<!--        update t_product-->
+<!--        <set>-->
+<!--            <if test="name!=null and name!=''">-->
+<!--                name=#{name},-->
+<!--            </if>-->
+<!--            <if test="price!=null">-->
+<!--                price=#{price},-->
+<!--            </if>-->
+<!--            <if test="stock!=null">-->
+<!--                stock=#{stock},-->
+<!--            </if>-->
+<!--            <if test="type!=null and type.id!=null">-->
+<!--                typeId=#{type.id},-->
+<!--            </if>-->
+<!--            <if test="description!=null and description!=''">-->
+<!--                description=#{description},-->
+<!--            </if>-->
+<!--            <if test="productIntroImgs!=null and productIntroImgs!=''">-->
+<!--                productIntroImgs=#{productIntroImgs},-->
+<!--            </if>-->
+<!--            <if test="productParaImgs!=null and productParaImgs!=''">-->
+<!--                productParaImgs=#{productParaImgs},-->
+<!--            </if>-->
+<!--        </set>-->
+<!--        where id=#{id}-->
+<!--    </update>-->
+
+</mapper>

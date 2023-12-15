@@ -1,0 +1,25 @@
+
+server:
+  port: 8085
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://8.219.235.62:3306/mgzm?useUnicode=true&serverTimezone=Asia/Shanghai
+    username: mgzm
+    password: 123456
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID #id生成规则
+    configuration:
+      map-underscore-to-camel-case: false
+      auto-mapping-behavior: full
+      log-impl: org.apache.ibatis.stdout.StdOutImpl
+      mapper-locations: classpath:/mybatis/mapper/*.xml

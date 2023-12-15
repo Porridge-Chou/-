@@ -1,0 +1,164 @@
+{
+  "pages": [
+	{
+		"path": "pages/login/login",
+		"style": {
+			"navigationBarTitleText": "登录"
+			
+		}
+	},
+	{
+		"path" : "pages/register/register",
+		"style" : 
+		{
+			"navigationBarTitleText" : "注册",
+			"enablePullDownRefresh" : false
+		}
+	},
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "明光筑梦",
+        "navigationBarBackgroundColor": "#fa7f4b",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/guanzhu/guanzhu",
+      "style": {
+        "navigationBarTitleText": "关注",
+        "navigationBarBackgroundColor": "#fa7f4b",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false,
+		"backgroundColor": "#ff0000"
+      }
+    },
+    {
+      "path": "pages/my/my",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationBarBackgroundColor": "#fa7f4b",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": false
+      }
+    },
+	{
+		"path" : "pages/messageList/messageList",
+		"style" : 
+		{
+			"navigationBarTitleText" : "聊天列表",
+			"navigationBarBackgroundColor":"#fa7f4b",
+			"navigationBarTextStyle": "white",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/chat/chat",
+		"style" : 
+		{
+			"navigationBarTitleText" : "聊天内容",
+			"navigationBarBackgroundColor":"#fa7f4b",
+			"navigationBarTextStyle": "white",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/ItemDetails/ItemDetails",
+		"style" : 
+		{
+			"navigationBarTitleText" : "孩子详情",
+			"navigationBarBackgroundColor":"#fa7f4b",
+			"navigationBarTextStyle": "white",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/organizationInfo/organizationInfo",
+		"style" : 
+		{
+			"navigationBarTitleText" : "组织详情",
+			"navigationBarBackgroundColor":"#fa7f4b",
+			"navigationBarTextStyle": "white",
+			"enablePullDownRefresh" : false
+		}
+	},
+	{
+		"path" : "pages/certificate/certificate",
+		"style" : 
+		{
+			"navigationBarTitleText" : "",
+			"enablePullDownRefresh" : false
+		}
+	},
+    // {
+    // 	"path" : "pages/kidInfo/kidInfo",
+    // 	"style" : 
+    // 	{
+    // 		"navigationBarTitleText" : "",
+    // 		"enablePullDownRefresh" : false
+    // 	}
+    // },
+    {
+    	"path" : "pages/donate/donate",
+    	"style" : 
+    	{
+			"navigationBarTitleText" : "捐助方式",
+			"navigationBarBackgroundColor":"#fa7f4b",
+    		// "navigationBarTitleText" : "",
+    		"enablePullDownRefresh" : false
+    	}
+    }
+    // {
+    // 	"path" : "pages/chat/chat",
+    // 	"style" : 
+    // 	{
+    // 		"navigationBarTitleText" : "",
+    // 		"enablePullDownRefresh" : false
+    // 	}
+    // }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+	"easycom": {
+			"autoscan": true,
+			"custom": {
+				"tui-(.*)": "@/components/thorui/tui-$1/tui-$1.vue"
+			}
+		}
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#fa7f4b",
+	"height": "70px",
+    "list": [
+      {
+		  "pagePath": "pages/index/index",
+		  "text": "首页",
+		  "selectedIconPath": "/static/img/首页 (2).png",
+		  "iconPath": "/static/img/首页 (3).png"
+		},
+		{
+		  "pagePath": "pages/guanzhu/guanzhu",
+		  "text": "关注",
+		  "selectedIconPath": "/static/img/关注 (2).png",
+		  "iconPath": "/static/img/关注 (3).png"
+		},
+	  {
+		"pagePath": "pages/messageList/messageList",
+		"text": "聊天",
+		"selectedIconPath": "/static/img/Group 8.png",
+		"iconPath": "/static/img/Group 6.png"
+	  },
+		{
+		  "pagePath": "pages/my/my",
+		  "text": "我的",
+		  "selectedIconPath": "/static/img/我的 (3).png",
+		  "iconPath": "/static/img/我的 (2).png"
+		}
+    ]
+  },
+  "uniIdRouter": {}
+}
